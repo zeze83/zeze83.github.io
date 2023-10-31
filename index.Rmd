@@ -1,0 +1,53 @@
+---
+title: "My awesome website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# This is Jeff's awesome website
+
+Here's a gif of elmo
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+You can add text
+
+* and lists
+* with extra bullets
+
+You can *FORMAT* and **bold**? Here's a link to the [about](about.html) page
+
+# Link to other website
+
+This is a [link](http://www.google.com/) to a good data science tool.
+
+Here is a link to [p8105](https://p8105.com/index.html).
+
+Here is a link to the [about](about.html) page.
+
+You can also still use R!
+
+```{r}
+library(tidyverse)
+plot_df = 
+  tibble(
+    x = runif(100),
+    y = 1+2*x +rnorm(100)
+  )
+
+plot_df |>
+  ggplot(aes(x=x, y=y))+
+  geom_point()
+```
+
+# New section: include picture
+
+There is an image of ISFJ.
+![](images/isfj.png)
+
+# Other stuff
+
+[plotly](plotly.html) codes
