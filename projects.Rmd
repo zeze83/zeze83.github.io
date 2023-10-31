@@ -1,0 +1,27 @@
+---
+title: "Projects"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# Here is a nice project:
+
+You can also still use R!
+
+```{r}
+library(tidyverse)
+plot_df = 
+  tibble(
+    x = runif(100),
+    y = 1+2*x +rnorm(100)
+  )
+
+plot_df |>
+  ggplot(aes(x=x, y=y))+
+  geom_point()
+```
+
+
